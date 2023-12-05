@@ -1,0 +1,62 @@
+/* ProjectCard.css */
+.project-card-container {
+    display: flex;
+    justify-content: left;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    border: none;
+    background: rgb(30, 0, 36);
+    background: linear-gradient(140deg, rgba(30, 0, 36, 1) 0%, rgba(64, 5, 79, 1) 20%, rgba(121, 9, 118, 1) 48%, rgba(255, 0, 110, 1) 100%);
+    border-radius: 25px;
+    box-shadow: 6px 4px 5px purple;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-thumbnail {
+    width: 115px;
+    /* Adjust the width as needed */
+    height: 115px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 25px 0 0 25px;
+    /* Rounded left corners */
+}
+
+.project-info {
+    flex: 1;
+    padding: 16px;
+}
+
+.project-title {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/* .learn-more-link {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+    transition: color 0.3s ease-in-out;
+} */
+
+.learn-more-link:hover {
+    color: #ffffff;
+}
