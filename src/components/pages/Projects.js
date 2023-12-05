@@ -10,23 +10,22 @@ const projectsData = [
         name: 'Orb',
         description: 'RGB ORB ANIMATION',
         thumbnail: 'images/img-2.jpg',
-        link: '/project1-details', // Link to the project details page
+        link: '/project1-details', 
     },
     {
         id: 2,
         name: 'Orb',
         description: 'RGB ORB ANIMATION',
         thumbnail: 'images/img-2.jpg',
-        link: '/project1-details', // Link to the project details page
+        link: '/project1-details', 
     },
     {
         id: 3,
         name: 'Orb',
         description: 'RGB ORB ANIMATION',
         thumbnail: 'images/img-2.jpg',
-        link: '/project1-details', // Link to the project details page
+        link: '/project1-details',
     },
-    // Add 
     // Add more projects as needed
 ];
 

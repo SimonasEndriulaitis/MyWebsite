@@ -1,4 +1,3 @@
-/* ProjectCard.css */
 .project-card-container {
     display: flex;
     justify-content: left;
@@ -23,12 +22,9 @@
 
 .project-thumbnail {
     width: 115px;
-    /* Adjust the width as needed */
     height: 115px;
-    /* Adjust the height as needed */
     object-fit: cover;
     border-radius: 25px 0 0 25px;
-    /* Rounded left corners */
 }
 
 .project-info {

@@ -1,13 +1,12 @@
-/* Projects.css */
 .projects-container {
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #333; /* Set your desired darker color */
-    color: #ffffff; /* Set text color to contrast with the background */
-    padding: 15px; /* Adjust padding as needed */
+    background-color: #333; 
+    color: #ffffff; 
+    padding: 15px; 
 }
 
 .projects-title {
