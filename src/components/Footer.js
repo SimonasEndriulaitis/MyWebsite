@@ -30,21 +30,15 @@ function Footer() {
                     <div class='footer-link-items'>
                         <h2>About Me</h2>
                         <Link to='/Idk'>Bio</Link>
-                        <Link to='/'>Testimonials</Link>
+                        <Link to='https://www.linkedin.com/in/simonas-endriulaitis-2306b1283/'>LinkedIn</Link>
                     </div>
                     <div class='footer-link-items'>
                         <h2>Contact Me</h2>
-                        <Link to='/'>Contact</Link>
-                        <Link to='/'>Support</Link>
-                        <Link to='https://www.linkedin.com/in/simonas-endriulaitis-2306b1283/'>LinkedIn</Link>
+                        <Link to='/'>Contact</Link>                     
                         <Link to='/'>UpWork</Link>
                     </div>
                 </div>
                 <div className='footer-link-wrapper'>
-                    <div class='footer-link-items'>
-                        <h2>Videos</h2>
-                        <Link to='/'>Submit Video</Link>
-                    </div>
                     <div class='footer-link-items'>
                         <h2>Social Media</h2>
                         <Link to='/'>Instagram</Link>

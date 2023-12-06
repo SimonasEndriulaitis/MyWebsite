@@ -24,7 +24,7 @@ const projectsData = [
         name: 'Orb',
         description: 'RGB ORB ANIMATION',
         thumbnail: 'images/img-2.jpg',
-        link: '/project1-details',
+        link: '/project1-details', 
     },
     // Add more projects as needed
 ];

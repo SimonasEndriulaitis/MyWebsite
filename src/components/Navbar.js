@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import debounce from 'lodash/debounce';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const [show, setShow] = useState(true);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -18,15 +20,35 @@ function Navbar() {
         }
     };
 
+    const controlNavbar = debounce(() => {
+        if (window.scrollY > 100) {
+            setShow(false);
+        } else {
+            setShow(true);
+        }
+    }, 100);
+
+    
     useEffect(() => {
         showButton();
+        window.addEventListener('scroll', controlNavbar);
+
+        return () => {
+            window.removeEventListener('scroll', controlNavbar);
+        };
     }, []);
 
-    window.addEventListener('resize', showButton);
+    useEffect(() => {
+        window.addEventListener('resize', showButton);
+
+        return () => {
+            window.removeEventListener('resize', showButton);
+        };
+    }, []);
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className={`navbar ${show ? '' : 'navbar-hidden'}`}>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         PurPur
@@ -47,7 +69,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                              Projects
+                                Projects
                             </Link>
                         </li>
                         <li className='nav-item'>
